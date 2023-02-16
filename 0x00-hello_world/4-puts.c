@@ -2,7 +2,7 @@
 /**
 * main - Entry point
 * Description : "a program that outputs a statement using puts function"
-* Return value : 0 when successful.
+* Return: 0 when successful.
 */
 int main(void)
 {
