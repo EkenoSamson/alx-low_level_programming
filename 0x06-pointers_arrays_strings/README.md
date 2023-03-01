@@ -1,8 +1,8 @@
-#C Pointers, Arrays and Strings (More)
+# C Pointers, Arrays and Strings (More)
 
 This directory contains solutions to the following projects provided by ALX
 
-##Mandatory tasks
+## Mandatory tasks
 
 * strcat - a function that concatenates two strings.
 * strncat - a function that concatenates two strings.
@@ -13,4 +13,4 @@ This directory contains solutions to the following projects provided by ALX
 * Expect the best -  a function that capitalizes all words of a string.
 * Mozart composed his music not for the elite, but for everybody - a function that encodes a string into 1337.
 
-##Advanced tasks
+## Advanced tasks
