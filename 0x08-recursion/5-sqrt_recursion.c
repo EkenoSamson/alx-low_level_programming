@@ -4,8 +4,8 @@
  * _sqrt_recursion - a function that return the natural square root of a number
  * @n: the given number
  * Return: the square root
+ * @i: the root
  */
-
 int sqrt1(int n, int i);
 int _sqrt_recursion(int n)
 {
@@ -18,7 +18,7 @@ int _sqrt_recursion(int n)
 /**
  * sqrt1 - return the actual square root
  * @n: the number
- * @i: the root
+ * @i: the iterator
  * Return: the root
  */
 
