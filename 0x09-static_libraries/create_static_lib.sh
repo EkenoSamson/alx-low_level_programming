@@ -1,5 +1,5 @@
 #!/bin/bash
-gcc -c *.c
-ar cr liball.a *.c
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -c *.c
+ar cr liball.a *.o
 ranlib liball.a
 
