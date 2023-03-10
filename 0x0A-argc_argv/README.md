@@ -6,10 +6,10 @@ This facility is used to direct the way the program goes about its task.
 	`int main(int argc, int *argv[]);`
 
 ## Resources
-	+ [Arguments to main](https://publications.gbdirect.co.uk//c_book/chapter10/arguments_to_main.html)
-	+ [argc and argv](http://crasseux.com/books/ctutorial/argc-and-argv.html)
-	+ [how to compile with unused variables](https://www.google.com/webhp?q=unused+variable+C)
-	+ [What does argc and argv mean?](https://www.youtube.com/watch?v=aP1ijjeZc24)
++ [Arguments to main](https://publications.gbdirect.co.uk//c_book/chapter10/arguments_to_main.html)
++ [argc and argv](http://crasseux.com/books/ctutorial/argc-and-argv.html)
++ [how to compile with unused variables](https://www.google.com/webhp?q=unused+variable+C)
++ [What does argc and argv mean?](https://www.youtube.com/watch?v=aP1ijjeZc24)
 
 ## Tasks
 	* File 0-whatsmyname.c is a program that prints its name, followed by a new line.
