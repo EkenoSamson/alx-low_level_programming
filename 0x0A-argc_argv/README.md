@@ -2,7 +2,8 @@
 
 Arguments to main provide a useful opportunity to give parameters to a program. 
 This facility is used to direct the way the program goes about its task.
-	`int main(int argc, int *argv[]);
+
+	`int main(int argc, int *argv[]);`
 
 ## Resources
 	+ [Arguments to main](https://publications.gbdirect.co.uk//c_book/chapter10/arguments_to_main.html)
