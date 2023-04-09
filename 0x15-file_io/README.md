@@ -14,6 +14,7 @@ binary. The folowing functions are used:
 
 - [Basics of File Handling in C](https://www.geeksforgeeks.org/basics-file-handling-c/)
 - [C - File I/O](https://www.geeksforgeeks.org/c-file-io/)
+- [Input-output system calls in C | Create, Open, Close, Read, ...](https://www.geeksforgeeks.org/input-output-system-calls-c-create-open-close-read-write/)
 - [Application](https://www.geeksforgeeks.org/bank-account-system-in-c-using-file-handling/?ref=rp)
 
 ## Tasks
