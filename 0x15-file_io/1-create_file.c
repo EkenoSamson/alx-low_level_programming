@@ -13,7 +13,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int op;
 	int wr;
-	int content;
+	int content = 0;
 
 	if (filename == NULL)
 		return (-1);
@@ -22,12 +22,9 @@ int create_file(const char *filename, char *text_content)
 	if (op == -1)
 		return (-1);
 
-	for (content = 0; text_content[content];)
+	while (text_content[content])
 		content++;
-	if (text_content == NULL)
-		wr = write(op, text_content, 0);
-	else
-		wr = write(op, text_content, content);
+	wr = write(op, text_content, content);
 
 	if (wr == -1)
 		return (-1);
