@@ -20,9 +20,10 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content == NULL)
 	{
-		if ((open(filename, O_CREAT | O_EXCL) == -1)
-				return (1);
-		if ((open(filename, O_CREAT | O_EXCL) != -1 || 0500)
+		if (open(filename, O_CREAT | O_EXCL) == -1)
+			return (1);
+		if (open(filename, O_CREAT | O_EXCL) != -1 ||
+				open(filename, O_RDONLY, 0))
 			return (-1);
 	}
 
@@ -30,7 +31,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (op == -1)
 	{
-		close(fd);
+		close(op);
 		return (-1);
 	}
 
@@ -43,7 +44,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (wr == -1 || wr != op)
 	{
-		close(fd);
+		close(op);
 		return (-1);
 	}
 	close(op);
