@@ -27,14 +27,16 @@ int append_text_to_file(const char *filename, char *text_content)
 			return (-1);
 	}
 
-	op = open(filename, O_WRONLY | O_APPEND | O_CREAT | O_EXCL);
+	if (open(filename, O_CREAT | O_EXCL) == -1)
+		return (-1);
+
+	op = open(filename, O_WRONLY | O_APPEND);
 
 	if (op == -1)
 	{
 		close(op);
 		return (-1);
 	}
-
 	if (text_content)
 	{
 		while (text_content[app])
@@ -48,6 +50,5 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 	close(op);
-
 	return (1);
 }
