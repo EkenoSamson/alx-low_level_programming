@@ -27,9 +27,6 @@ int append_text_to_file(const char *filename, char *text_content)
 			return (-1);
 	}
 
-	if (open(filename, O_CREAT | O_EXCL) == -1)
-		return (-1);
-
 	op = open(filename, O_WRONLY | O_APPEND);
 
 	if (op == -1)
@@ -44,7 +41,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	wr = write(op, text_content, app);
 
-	if (wr == -1 || wr != op)
+	if (wr == -1 || wr != app)
 	{
 		close(op);
 		return (-1);
