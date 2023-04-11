@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	int f_f, f_t, rd, wr;
+	int f_f, f_t, rd, wr, f, t;
 	char *bf;
 
 	bf = malloc(sizeof(char) * 1024);
@@ -46,8 +46,17 @@ int main(int argc, char *argv[])
 
 	} while (rd > 0);
 	free(bf);
-	close_f(f_f);
-	close_f(f_t);
+	f = close(f_f);
+	t = close(f_t);
+
+	if (f == -1 || t == -1)
+	{
+		if (f < 0)
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f_f);
+		if (t < 0)
+			dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", f_t);
+		exit(100);
+	}
 
 	return (0);
 }
