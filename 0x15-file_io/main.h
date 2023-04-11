@@ -16,7 +16,22 @@ int _putchar(char c);
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
 int append_text_to_file(const char *filename, char *text_content);
-void close_file(int fd);
+void close_f(int fd);
+
+#include "main.h"
+
+void close_f(int fd)
+{
+	int z;
+
+         z = close(fd);
+
+         if (z == -1)
+         {
+                dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+                exit(100);
+	 }
+}
 
 __home void print_osabi(unsigned char *e_ident)
 {

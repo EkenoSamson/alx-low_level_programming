@@ -9,9 +9,9 @@
  * Return: 0 on success
  */
 
-int main(int argc, char argv[])
+int main(int argc, char *argv[])
 {
-	int f_f, f_t, rd, wr, f_end, t_end;
+	int f_f, f_t, rd, wr;
 	char *bf;
 
 	bf = malloc(sizeof(char) * 1024);
@@ -33,7 +33,7 @@ int main(int argc, char argv[])
 			free(bf);
 			exit(98);
 		}
-		wr = write(f_t, buffer, rd);
+		wr = write(f_t, bf, rd);
 		if (f_t == -1 || wr == -1)
 		{
 			dprintf(STDERR_FILENO,
