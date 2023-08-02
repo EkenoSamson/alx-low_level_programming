@@ -1,35 +1,41 @@
 #include "main.h"
 
-
 /**
- * is_palindrome - checks for palindromic nature
- * @s: string to check
+ * is_palindrome - checks palindrome
  *
- * Return: 1 if it is a a palindrome string, 0 it's not
+ * @s: string to be checked
+ *
+ * Return: 1 if palindrome else 0
  *
  */
+
+int _strlen_recursion(char *s);
 
 int is_palindrome(char *s)
 {
-	int len = _strlen_recursion(s) - 1;
+	int length = _strlen_recursion(s);
 
-	if (len <= 0)
-		return (1);
-	return (1 + (_palindrome(s, len)));
+	return (_palindrome(s, length - 1));
 }
-
 
 /**
- * _palindrome - checks the characters recursively for palindrome
- * @s: string to check
- * @len: length of the string
+ * _palindrome - checks recursively based on length of string
  *
- * Return: 1 if palindrome, 0 if not
+ * @string: the string
+ * @index: indexing
+ *
+ * Return: 1 if palindrome else 0
  *
  */
-int _palindrome(char *s, int len)
+
+int _palindrome(char *string, int index)
 {
-	if (*s == *(s + len))
-		return (_palindrome(s + 1, len - 1));
+	if (index < 1)
+		return (1);
+	else if (*string == *(string + index))
+		return (_palindrome(string + 1, index - 2));
 	return (0);
 }
+
+
+
