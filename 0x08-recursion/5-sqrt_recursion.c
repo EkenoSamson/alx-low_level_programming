@@ -4,29 +4,29 @@
  * _sqrt_recursion - a function that return the natural square root of a number
  * @n: the given number
  * Return: the square root
- * @i: the root
+ *
  */
-int sqrt1(int n, int i);
+
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	return (sqrt1(n, 1));
+	return (_sqrt(n, 0));
 }
 
 
 /**
- * sqrt1 - return the actual square root
- * @n: the number
- * @i: the iterator
+ * _sqrt - return the actual square root
+ * @s: the number (assumed to be a square with a natural square root)
+ * @r: the root
  * Return: the root
  */
 
-int sqrt1(int n, int i)
+int _sqrt(int s, int r)
 {
-	if (i * i > n)
+	if (r * r > s)
 		return (-1);
-	else if (i * i == n)
-		return (i);
-	return (sqrt1(n, i + 1));
+	else if (r * r == s)
+		return (r);
+	return (_sqrt(s, r + 1));
 }
