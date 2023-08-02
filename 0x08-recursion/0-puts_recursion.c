@@ -3,7 +3,8 @@
 /**
  * _puts_recursion - a function that prints a string followed by a new line
  * @s: string
- * Return: terminates the function
+ * Return: terminates the base case
+ *
  */
 
 void _puts_recursion(char *s)
