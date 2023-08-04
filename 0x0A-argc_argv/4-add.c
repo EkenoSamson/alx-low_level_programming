@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/** main - Entry point.
+/**
+ * main - Entry point.
  * Description: Program that adds positive numbers.
  *
  * @argc: argument count:
