@@ -1,11 +1,11 @@
 #ifndef DOG_H
 #define DOG_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
  * struct dog - user defined data type to store dog information.
- *
  * @name: name of the dog.
  * @age: age of the dog.
  * @owner: owner of the dog.
@@ -32,3 +32,4 @@ dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
 
 #endif
+
