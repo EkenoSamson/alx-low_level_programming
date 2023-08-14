@@ -1,4 +1,4 @@
-# C STRUCTURES
+## C STRUCTURES
 
 Structures are user defined data types that allow to combine data items of different kinds.
 Structures can be defined in the global scope of the program.
@@ -7,6 +7,7 @@ Structures can be defined in the global scope of the program.
 
 + [struct (C programming language)](https://en.wikipedia.org/wiki/Struct_(C_programming_language))
 + [typedef](https://publications.gbdirect.co.uk//c_book/chapter8/typedef.html)
++ [intro to Structure](https://youtu.be/LpHnHRI6gLc)
 
 ## Tasks
 
@@ -16,3 +17,4 @@ Structures can be defined in the global scope of the program.
 - dog.h : a new type dog-t as a new name for the type struct dog.
 - 4-new-dog.c : a function that creates a new dog.
 - 5-free-dog.c : a function that frees dogs.
+
