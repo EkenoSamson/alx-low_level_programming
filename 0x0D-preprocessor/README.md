@@ -1,18 +1,16 @@
-# C - PREPORCESSOR
+## C - PREPORCESSOR
 
 The C preprocessor modifies a source code before handing it over to the compiler.
 There are essentially three uses of the preprocessor:
-	+ Directives
-	+ Constants
-	+ Macros
+	+ Removing all the comments.
+	+ File inclusion.
+	+ Macros expansion
 
 ## Resources
 
 - [Pre Processor Directives in C](https://www.youtube.com/watch?v=X6HiYbY3Uak)
 - [The C Preprocessor](https://www.cprogramming.com/tutorial/cpreprocessor.html)
-- [Standard Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Standard-Predefined-Macros.html#Standard-Predefined-Macros)
-- [include guard](https://en.wikipedia.org/wiki/Include_guard)
-- [Common Predefined Macros](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/Common-Predefined-Macros.html#Common-Predefined-Macros)
+- [GNU: The C Preprocessor](https://gcc.gnu.org/onlinedocs/gcc-5.1.0/cpp/index.html#Top)
 
 ## Tasks
 
