@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * Main - Entry point
+ * main - Entry point
  * Description: Program that prints the name of the file.
  * Return: 0 on success
  */
