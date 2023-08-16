@@ -1,5 +1,7 @@
-# FUCTION POINTER
+## FUNCTION POINTER
 
+While a pointer to a variable/object is used to accesss them indirectly, 
+a pointer to a function is used to invoke a function indirectly.
 It is possible to take the address of a function. Similar to arrays, functions 
 decay to pointers when their names are used. If you would want the address of 
 a function, you would use either function or &function.
