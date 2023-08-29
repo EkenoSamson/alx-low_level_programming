@@ -3,7 +3,7 @@
 /**
  * print_listint - prints all the elements of a listint_t list.
  * @h: points to the first node.
- * Returns: number of nodes.
+ * Return: number of nodes.
  */
 
 size_t print_listint(const listint_t *h)
