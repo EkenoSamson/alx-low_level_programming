@@ -1,0 +1,15 @@
+# make -f 2-Makefile
+
+CC := gcc
+SRC := main.c school.c
+OBJ := ${SRC:.c=.o}
+NAME := school
+
+.PHONY: all
+
+all: ${NAME}
+
+${NAME}: ${OBJ}
+	${CC} -Wall -Werror -Wextra -pedantic -std=gnu89 ${OBJ} -o ${NAME}
+
+
